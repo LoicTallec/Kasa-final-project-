@@ -1,13 +1,14 @@
 import logo from '../../assets/images/logo_h.png';
-import { Link } from 'react-router-dom';
- // Importe le fichier de style SCSS
+import { NavLink } from 'react-router-dom';
+import style from './header.css';
+
 const Header = () => {
     return (
         <header className='header'>
             <img src={logo} alt="Logo KASA" />
             <nav>
-                <Link href="/">Accueil</Link>
-                <Link href="/About">A Propos</Link>
+                <NavLink to="/" activeClassName="active">Accueil</NavLink>
+                <NavLink to="/about" activeClassName="active" className='aboutlink'>À Propos</NavLink>
             </nav>
         </header>
     );

@@ -1,10 +1,12 @@
 import React from 'react';
-
-function Card({ data }) {
+import { Link } from 'react-router-dom';
+function Card({ datacc }) {
     return (
-        <figure>
-    
+        //<link className='link' to={datacc.id}>
+        <figure className='figcard'>
+            <figcaption>{}</figcaption>
         </figure>
+       // <Link />
     );
 };
 

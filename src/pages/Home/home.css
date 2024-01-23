@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;400;500&display=swap');
+
+
+.figlandscape {
+    margin: 0 15px;
+}
+
+.landscape {
+    width: 100%;
+    height: 111px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+}
+
+.figcaplandscape {
+    position: absolute;
+    top: 11%;
+    left: 10%;
+    width: 220px;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FFF; 
+}
+
+@media screen and (min-width: 768px) {
+    .figlandscape {
+        margin: 0 25px;
+    }
+
+    .figcaplandscape {
+        text-align: center;
+        top: 16.5%;
+        left: 0;
+        width: 100%;
+        font-size: 36px;
+    }
+    
+}
