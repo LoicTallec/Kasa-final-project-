@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-//import About from './pages/about';
+import About from './pages/About/About';
 //import Error from './pages/error';
 //import FullCard from './pages/fullCard';
 import Header from './components/Header/Header';
@@ -18,7 +18,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        
+        <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>
