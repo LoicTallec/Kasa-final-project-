@@ -22,9 +22,16 @@ const Home = () => {
             Chez vous, partout et ailleurs
           </figcaption>
       </figure>
-      
-      <Card />
 
+      <article className='allcards'>
+        {datacc.map((card, index) => (
+            <figure key={index} className='figcard'>
+              <img src={card.cover} alt={card.cover} />
+              <figcaption className='figcapcard'>{card.title}</figcaption>
+            </figure>
+          
+        ))}
+      </article>
     </main>
   );
 };

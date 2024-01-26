@@ -1,3 +1,57 @@
 .figcard {
+    position: relative;
     display: flex;
+
+    margin: 0 15px;
+}
+    
+.figcard img {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.figcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    z-index: 2;
+  }
+
+.figcapcard {
+    position: absolute;
+    text-align: left;
+    top: 75%;
+    left: 5%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFF; 
+    z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .figcard {
+        margin: auto;
+        width: 48%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .figcard {
+        max-width: 325px;
+        margin: auto;
+        
+    }
+    
 }

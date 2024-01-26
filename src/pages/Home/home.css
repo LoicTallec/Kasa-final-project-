@@ -2,7 +2,7 @@
 
 
 .figlandscape {
-    margin: 0 15px;
+    margin: 0 15px 15px 15px;
 }
 
 .landscape {
@@ -36,7 +36,7 @@
     }
 
     .figlandscape {
-        margin: 0 35px;
+        margin: 0 35px 35px 35px;
     }
 
     .figcaplandscape {
@@ -45,7 +45,31 @@
         left: 0;
         width: 100%;
         font-size: 36px; 
+    }
 
+    .allcards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 35px;
+        max-width: 1224px;
+        margin: auto;
     }
     
+}
+
+@media screen and (min-width: 1024px) {
+    .allcards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 35px;
+        max-width: 1240px;
+        margin: auto;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        gap: 25px;
+    }
+    
+    .figcaplandscape {
+        top: 14%;
+    }
 }
