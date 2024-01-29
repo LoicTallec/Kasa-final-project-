@@ -1,57 +1,18 @@
-.figcard {
-    position: relative;
-    display: flex;
-
-    margin: 0 15px;
-}
-    
-.figcard img {
-    position: relative;
+.card {
     width: 100%;
-    height: 285px;
-    object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 15px;
-    z-index: 1;
+    overflow: hidden;
+    position: relative;
 }
 
-.figcard::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 15px;
-    left: 0;
-    border-radius: 15px;
-    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
-    z-index: 2;
-  }
-
-.figcapcard {
-    position: absolute;
-    text-align: left;
-    max-width: 250px;
-    top: 75%;
-    left: 5%;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #FFF; 
-    z-index: 3;
+@media (min-width: 768px) {
+    .card {
+        width: calc((100% - 30px) / 2);
+    }   
 }
 
-@media screen and (min-width: 768px) {
-    .figcard {
-        margin: auto;
-        width: 48%;
+@media (min-width: 1200px) {
+    .card {
+        width: calc((100% - 60px) / 3);
     }
-    
-}
-
-@media screen and (min-width: 1024px) {
-    .figcard {
-        max-width: 325px;
-        margin-bottom: 3vh;
-        
-    }  
 }

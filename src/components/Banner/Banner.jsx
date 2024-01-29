@@ -1,13 +1,13 @@
 import React from 'react';
-import landscape1 from '../../assets/images/landscape1.png';
+import './banner.css';
 
+function Banner({ src, alt, content="" }) {
+  return (
+    <header>
+      <img src={src} alt={alt} />
+      <p>{content}</p>
+    </header>
+  );
+}
 
-const BannerSea = ({ landscape1 }) => {
-    return (
-        <div>
-            <img src={landscape1} />
-        </div>
-    );
-};
-
-export default BannerSea
+export default Banner;

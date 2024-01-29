@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import landscape1 from '../../assets/images/landscape1.png';
+import seasideCliffs from '../../assets/images/seaside-cliffs.png';
 import Card from '../../components/Card/Card';
-import style from './home.css';
+import './home.css';
 import datacc from '../../assets/logements.json';
+import Banner from '../../components/Banner/Banner';
+//import { Link } from 'react-router-dom';
 
 const Home = () => {
     
@@ -16,20 +18,12 @@ const Home = () => {
   return (
     <main>
       
-      <figure className='figlandscape'>
-        <img src={landscape1} className="landscape" alt="Landscape" />
-          <figcaption className="figcaplandscape">
-            Chez vous, partout et ailleurs
-          </figcaption>
-      </figure>
+      <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous, partout et ailleurs" />
 
       <article className='allcards'>
         {datacc.map((card, index) => (
-            <figure key={index} className='figcard'>
-              <img src={card.cover} alt={card.cover} />
-              <figcaption className='figcapcard'>{card.title}</figcaption>
-            </figure>
           
+          <Card src={card.cover} alt={card.cover} content={card.title} />
         ))}
       </article>
     </main>

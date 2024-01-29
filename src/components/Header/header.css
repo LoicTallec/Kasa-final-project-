@@ -16,6 +16,7 @@
 .header nav a{
     color: #FF6060;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .aboutlink {
@@ -44,6 +45,10 @@ nav a{
 
     .aboutlink {
         margin-left: 65px;
+    }
+
+    .header nav a{
+        text-transform: none;
     }
     
 }

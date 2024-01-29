@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import style from './card.css';
-function Card({ datacc }) {
-    return (
+import './card.css';
 
-        <figure className='figcard'>
-            <figcaption>{datacc}</figcaption>
-        </figure>
+function Card({ src, alt, content = "" }) {
+  return (
 
-    );
+    <figure className='card'>
+      <img src={src} alt={alt} />
+        <figcaption className="card-content">{content}</figcaption>
+    </figure>
+
+  );
 };
 
 export default Card
