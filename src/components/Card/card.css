@@ -30,6 +30,7 @@
 .figcapcard {
     position: absolute;
     text-align: left;
+    max-width: 250px;
     top: 75%;
     left: 5%;
     font-size: 18px;
@@ -50,8 +51,7 @@
 @media screen and (min-width: 1024px) {
     .figcard {
         max-width: 325px;
-        margin: auto;
+        margin-bottom: 3vh;
         
-    }
-    
+    }  
 }
