@@ -4,7 +4,7 @@ import './card.css';
 function Card({ src, alt, content = "" }) {
   return (
 
-    <figure className='card'>
+    <figure className='card shadow'>
       <img src={src} alt={alt} />
         <figcaption className="card-content">{content}</figcaption>
     </figure>

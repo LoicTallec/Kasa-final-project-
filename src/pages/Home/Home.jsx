@@ -20,12 +20,12 @@ const Home = () => {
       
       <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous, partout et ailleurs" />
 
-      <article className='allcards'>
+      <ul className='allcards'>
         {datacc.map((card, index) => (
           
           <Card src={card.cover} alt={card.cover} content={card.title} />
         ))}
-      </article>
+      </ul>
     </main>
   );
 };
