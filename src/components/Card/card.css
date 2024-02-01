@@ -14,7 +14,7 @@
         border-radius: 10px;
     }
 
-    figcaption {
+    .card-content {
         position: absolute;
         bottom: 25px;
         left: 15px;

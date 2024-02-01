@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 //import Error from './pages/error';
-//import FullCard from './pages/fullCard';
+import FullCard from './pages/FullCard/FullCard';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -18,6 +18,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/fullCard/:id" element={<FullCard />} />
         <Route path="/About" element={<About />} />
       </Routes>
       <Footer />

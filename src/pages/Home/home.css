@@ -1,11 +1,9 @@
 .allcards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin: 15px auto;
     padding: 0;
     width: calc(100% - 30px);
 }
+
 
 @media(min-width: 768px) {
     .allcards {

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import style from './collapse.css';
+import './collapse.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content='' }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
@@ -9,13 +11,12 @@ const Collapse = ({ title, content }) => {
     };
 
     return (
-        <article className="collapse-container">
+        <figure className="collapse-container">
             <button onClick={toggleCollapse} className="collapse-button">
-                {isCollapsed ? '' : ''}{title}
+                <i className={`fa-solid fa-caret-down ${isCollapsed ? '' : 'rotate-180'}`}></i>{title}
             </button>
-            {isCollapsed ? null : <div className="content-expanded">
-                {content}</div>}
-        </article>
+            {isCollapsed ? null : <div className="content-expanded">{content}</div>}
+        </figure>
     );
 };
 
