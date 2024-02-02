@@ -1,8 +1,7 @@
+import logo from '../../assets/images/logo_f.png'; 
+import './footer.css'; 
 
-import logo from '../../assets/images/logo_f.png'; // Importe l'image de logo
-import styles from './footer.css'; // Importe le fichier de style CSS
-
-const Footer = () => {
+function Footer() {
     return (
         <footer>
             <img src={logo} alt="Logo KASA"/>

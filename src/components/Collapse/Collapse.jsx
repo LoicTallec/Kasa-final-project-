@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './collapse.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 
-const Collapse = ({ title, content='' }) => {
+function Collapse({ title, content='' }) {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
