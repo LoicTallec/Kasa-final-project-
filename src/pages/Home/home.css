@@ -15,7 +15,6 @@
 @media(min-width: 768px) {
   .allcards {
     gap: 30px;
-    margin: 40px 20px;
     background-color: #F6F6F6;
     padding: 40px;
     border-radius: 15px;

@@ -9,12 +9,14 @@ function Collapse({ title, content = '' }) {
   };
 
   return (
-    <figure className="collapse-container">
+
+      <li>
       <button onClick={toggleCollapse} className="collapse-button">
         <i className={`fa-solid fa-caret-down ${isCollapsed ? '' : 'rotate-180'}`}></i>{title}
       </button>
       {isCollapsed ? null : <div className="content-expanded">{content}</div>}
-    </figure>
+      </li>
+    
   );
 };
 

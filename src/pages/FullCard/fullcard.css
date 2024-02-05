@@ -1,0 +1,15 @@
+h1 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FF6060;
+    line-height: 25px;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 5px 0;
+}
