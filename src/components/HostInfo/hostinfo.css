@@ -1,21 +1,21 @@
 .host {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
 }
 
 .host-figure {
-    display: flex;
-    justify-content: right;
-    margin: 0 15px 2px 0;
+  display: flex;
+  justify-content: right;
+  margin: 0 15px 2px 0;
 
-    .host-name {
-        text-align: right;
-        color: #FF6060;
-        font-family: 'montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 17px;
-    }
+  .host-name {
+    text-align: right;
+    color: #FF6060;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+  }
 }

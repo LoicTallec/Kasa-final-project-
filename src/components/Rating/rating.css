@@ -1,17 +1,17 @@
 .color-stars {
-    color: #FF6060;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+  color: #FF6060;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .gray-stars {
-    color: #E7E7E7;
+  color: #E7E7E7;
 }
 
 .rating {
-    display: flex;
-    position: relative;
-    top: 25px;
-    left: 15px;
+  display: flex;
+  position: relative;
+  top: 25px;
+  left: 15px;
 }

@@ -6,16 +6,14 @@ import data from '../../assets/about.json';
 import Banner from '../../components/Banner/Banner';
 
 const About = () => {
-    return (
-        <main>
-            <Banner src={mountainForests} alt="Forêt montagneuse" />
-            {data.map((about, index) => (
-                <Collapse key={index} title={about.title} content={about.content} />
-            ))}
-        </main>
-    )
+  return (
+    <main>
+      <Banner src={mountainForests} alt="Forêt montagneuse" />
+      {data.map((about, index) => (
+        <Collapse key={index} title={about.title} content={about.content} />
+      ))}
+    </main>
+  )
 }
 
 export default About;
-
-

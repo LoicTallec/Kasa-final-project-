@@ -1,25 +1,25 @@
 .allcards {
-    margin: 15px auto;
-    padding: 0;
-    width: calc(100% - 30px);
+  margin: 15px auto;
+  padding: 0;
+  width: calc(100% - 30px);
 }
 
 
 @media(min-width: 768px) {
-    .allcards {
-        width: calc(100% - 150px);
-        gap: 30px;
-        margin-top: 40px;
-        background-color: #F6F6F6;
-        padding: 40px;
-        border-radius: 15px;
-        max-width: 1158px;
-    }
+  .allcards {
+    width: calc(100% - 150px);
+    gap: 30px;
+    margin-top: 40px;
+    background-color: #F6F6F6;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1158px;
+  }
 }
 
-    @media screen and (min-width: 1200px) {
-        .allcards {
-            width: calc(100% - 250px);
-        }
-        
-    }
+@media screen and (min-width: 1200px) {
+  .allcards {
+    width: calc(100% - 250px);
+  }
+
+}
