@@ -4,20 +4,20 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import './rating.css';
 
 function Rating({ rating }) {
-    const starIcons = [];
-        for (let i = 0; i < 5; i++) {
-        if (i < rating) {
-        starIcons.push(<FontAwesomeIcon icon={faStar} className='color-stars' key={i} />);
-        } else {
-        starIcons.push(<FontAwesomeIcon icon={faStar} className='gray-stars' key={i} />);
-        }
+  const starIcons = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < rating) {
+      starIcons.push(<FontAwesomeIcon icon={faStar} className='color-stars' key={i} />);
+    } else {
+      starIcons.push(<FontAwesomeIcon icon={faStar} className='gray-stars' key={i} />);
     }
+  }
 
-return (
+  return (
     <figure className='rating'>
-        {starIcons}
+      {starIcons}
     </figure>
-);
+  );
 };
 
 export default Rating;
