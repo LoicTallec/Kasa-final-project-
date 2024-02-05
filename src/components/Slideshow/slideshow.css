@@ -1,15 +1,30 @@
+.slideshow {
+  position: relative;
+  margin: auto;
+  padding: 0 15px;
+
+  img:first-child {
+    width: 100%;
+    object-fit: cover;
+    height: 255px;
+    border-radius: 15px;
+  }
+}
+
 .arrow-left {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .arrow-right {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
