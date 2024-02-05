@@ -7,11 +7,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav,
+main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 figure {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }

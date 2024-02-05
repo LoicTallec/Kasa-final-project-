@@ -1,17 +1,14 @@
 import React from 'react';
-import './propertydetails.css';
+import './tags.css';
 
 function PropertyDetails({ tags, location }) {
 
 return (
-  <figure className="property-details">
-    <b>{location}</b>
-      <ul>
+      <ul className="property-details">
         {tags.map((tag, index) => (
           <li key={index}>{tag}</li>
         ))}
       </ul>
-  </figure>
 );
 };
 

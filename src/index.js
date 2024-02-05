@@ -8,14 +8,14 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 //import Error from './pages/error';
 import FullCard from './pages/FullCard/FullCard';
-import Header from './components/Header/Header';
+import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fullCard/:id" element={<FullCard />} />

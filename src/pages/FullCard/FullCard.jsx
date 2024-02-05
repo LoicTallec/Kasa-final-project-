@@ -4,7 +4,7 @@ import './fullcard.css';
 import Collapse from '../../components/Collapse/Collapse';
 import Rating from '../../components/Rating/Rating';
 import HostInfo from '../../components/HostInfo/HostInfo';
-import PropertyDetails from '../../components/PropertyDetails/PropertyDetails';
+import Tags from '../../components/Tags/Tags';
 import Slideshow from '../../components/Slideshow/Slideshow';
 
 function FullCard() {
@@ -13,12 +13,12 @@ function FullCard() {
   return (
     <main>
       <Slideshow images={card.pictures} />
-      <PropertyDetails host={card.host} tags={card.tags} location={card.location} />
+      <h1>{card.title}</h1>
+      <Tags host={card.host} tags={card.tags} location={card.location} />
       <Rating rating={card.rating} />
       <HostInfo name={card.host.name} picture={card.host.picture} />
       <Collapse title="Description" content={card.description} />
       <Collapse title="Equipements" content={<ul>{card.equipments.map((equipement, index) => <li key={index}>{equipement}</li>)}</ul>} />
-
     </main>
   );
 

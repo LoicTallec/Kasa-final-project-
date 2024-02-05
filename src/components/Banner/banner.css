@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
   margin: auto;
 
   img {
@@ -28,7 +27,7 @@
 
 @media (min-width: 768px) {
   .banner {
-    padding: 0 35px;
+    padding: 0 20px;
 
     img {
       max-height: 180px;
@@ -46,7 +45,6 @@
 
 @media (min-width: 1200px) {
   .banner {
-    max-width: 1235px;
 
     img {
       max-height: 223px;
