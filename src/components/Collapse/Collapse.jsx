@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './collapse.css';
+import Arrow from '../../assets/images/arrow_left.png';
 
 function Collapse({ title, content = '' }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -12,7 +13,7 @@ function Collapse({ title, content = '' }) {
 
       <li>
       <button onClick={toggleCollapse} className="collapse-button">
-        <i className={`fa-solid fa-caret-down ${isCollapsed ? '' : 'rotate-180'}`}></i>{title}
+      <img src={Arrow} alt="Toggle" style={{ transform: `rotate(${isCollapsed ? 0 : 180}deg)` }} />{title}
       </button>
       {isCollapsed ? null : <div className="content-expanded">{content}</div>}
       </li>

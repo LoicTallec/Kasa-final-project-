@@ -19,3 +19,12 @@
     }
   }
 
+@media (min-width: 768px) {
+  .property-details {
+    li {
+      padding: 4px 17px;
+      border-radius: 6px;
+    }
+  }
+  
+}

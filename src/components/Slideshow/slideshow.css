@@ -14,7 +14,7 @@
   width: 20px;
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 15px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -26,4 +26,13 @@
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .slideshow {
+    img:first-child {
+      height: 410px;
+    }
+  }
+  
 }
