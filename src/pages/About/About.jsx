@@ -9,9 +9,11 @@ const About = () => {
   return (
     <main>
       <Banner src={mountainForests} alt="Forêt montagneuse" />
+      <ul className='about-collapse'>
       {data.map((about, index) => (
         <Collapse key={index} title={about.title} content={about.content} />
       ))}
+      </ul>
     </main>
   )
 }
