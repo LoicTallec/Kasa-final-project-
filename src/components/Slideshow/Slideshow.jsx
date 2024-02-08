@@ -16,9 +16,13 @@ const Slideshow = ({ images }) => {
 
   return (
     <figure className="slideshow">
-      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
-      <img src={leftArrow} alt="Left arrow" className='arrow-left' onClick={prevSlide} />
-      <img src={rightArrow} alt="Right arrow" className='arrow-right' onClick={nextSlide} />
+      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className='slideshow-image' />
+      {images.length > 1 && (
+        <div>
+          <img src={leftArrow} alt="Left arrow" className='arrow-left' onClick={prevSlide} />
+          <img src={rightArrow} alt="Right arrow" className='arrow-right' onClick={nextSlide} />
+        </div>
+      )}
     </figure>
   );
 }

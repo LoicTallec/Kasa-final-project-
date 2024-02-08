@@ -28,6 +28,7 @@
         width: 10px;
         position: absolute;
         right: 15px;
+        transition: 'transform 0.3s ease'
       }
     }
   }
@@ -44,6 +45,17 @@
   font-weight: 400;
   font-family: 'montserrat', sans-serif;
   line-height: 18px;
+}
+
+.content-expanded {
+    from {
+
+      opacity: 0;
+    }
+    to {
+
+      opacity: 1;
+    }
 }
 
 
