@@ -12,7 +12,7 @@ function FullCard() {
   const card = accomodations.find((card) => card.id === id);
   
   if (!card.id) {
-    <Link to="*" />
+    <Link to="/error" />
   } 
 
   return (

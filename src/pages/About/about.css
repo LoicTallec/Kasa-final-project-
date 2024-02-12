@@ -33,3 +33,9 @@
     }
   }
 }
+
+@media (min-width: 762px) {
+  .about-collapse button {
+    height: 40px;
+  }
+}

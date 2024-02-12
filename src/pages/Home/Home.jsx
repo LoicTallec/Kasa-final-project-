@@ -21,14 +21,14 @@ const Home = () => {
       <Banner src={seasideCliffs} alt="Bord de mer" content="Chez vous, partout et ailleurs" />
 
       <ul className='allcards'> 
-        {accomodations.map((card, index) => (
-          <li>
-            <Link to={`/fullCard/${card.id}`} key={index}>
-            <Card src={card.cover} alt={card.cover} content={card.title} />
-            </Link>
-          </li>
-        ))}
-      </ul>
+  {accomodations.map((card) => (
+    <li key={card.id}>
+      <Link to={`/fullCard/${card.id}`}>
+        <Card src={card.cover} alt={card.cover} content={card.title} />
+      </Link>
+    </li>
+  ))}
+</ul>
     </main>
   );
 };

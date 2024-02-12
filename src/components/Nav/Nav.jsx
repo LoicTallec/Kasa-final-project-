@@ -8,10 +8,10 @@ function Nav() {
       <img src={logo} alt="Logo KASA" />
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active">Accueil</NavLink>
+          <NavLink to="/" activeclassname="active">Accueil</NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeClassName="active" className='aboutlink'>À Propos</NavLink>
+          <NavLink to="/about" activeclassname="active" className='aboutlink'>À Propos</NavLink>
         </li>
       </ul>
     </nav>
