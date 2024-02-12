@@ -6,7 +6,7 @@ import accomodations from '../../assets/logements.json';
 import Banner from '../../components/Banner/Banner';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+function Home() {
     
   const [cards, setCards] = useState([]);
 
