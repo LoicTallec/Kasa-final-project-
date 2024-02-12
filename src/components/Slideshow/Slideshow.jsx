@@ -16,7 +16,8 @@ const Slideshow = ({ images }) => {
 
   return (
     <figure className="slideshow">
-      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className='slideshow-image' />
+      <figcaption className='count'>{images.length > 1 && <p>{currentImageIndex + 1}/{images.length}</p>}</figcaption>
+      <img src={images[currentImageIndex]} alt={`${currentImageIndex + 1}`} className='slideshow-image' />
       {images.length > 1 && (
         <div>
           <img src={leftArrow} alt="Left arrow" className='arrow-left' onClick={prevSlide} />

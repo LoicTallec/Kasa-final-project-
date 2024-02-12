@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import accomodations from '../../assets/logements.json';
 import './fullcard.css';
 import Collapse from '../../components/Collapse/Collapse';
@@ -6,14 +6,15 @@ import Rating from '../../components/Rating/Rating';
 import HostInfo from '../../components/HostInfo/HostInfo';
 import Tags from '../../components/Tags/Tags';
 import Slideshow from '../../components/Slideshow/Slideshow';
+import Error from '../Error/Error'
 
 function FullCard() {
   const { id } = useParams();
   const card = accomodations.find((card) => card.id === id);
   
-  if (!card.id) {
-    <Link to="/error" />
-  } 
+  if (!card) {
+    return <Error />
+  }; 
 
   return (
     <main>

@@ -25,7 +25,11 @@
     right: 15px;
     transform: translateY(-50%);
     cursor: pointer;
-  }
+  }  
+}
+
+.count {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -33,5 +37,17 @@
     .slideshow-image {
       height: 410px;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .count {
+    display: flex;
+    position: absolute;
+    top: 333px;
+    right: calc((97%) / 2);
+    font-size: 24px;
+    color: #FFF;
+
   }
 }
