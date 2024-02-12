@@ -12,4 +12,4 @@ function Card({ src, alt, content = "" }) {
   );
 };
 
-export default Card
+export default Card;
