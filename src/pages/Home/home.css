@@ -1,0 +1,40 @@
+.allcards {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 1200px;
+  margin-top: 15px;
+
+  li {
+    width: 100%;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .allcards {
+    gap: 30px;
+    background-color: #F6F6F6;
+    padding: 40px;
+    border-radius: 15px;
+
+    li {
+      width: calc((100% - 30px) / 2);
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .allcards {
+    margin: 35px auto;
+
+    li {
+      width: 340px;
+      height: 340px;
+      margin: auto auto 15px auto;
+    }
+  }
+
+}
