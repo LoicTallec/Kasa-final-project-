@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import accomodations from '../../assets/logements.json';
 import './fullcard.css';
 import Collapse from '../../components/Collapse/Collapse';
@@ -10,6 +10,11 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 function FullCard() {
   const { id } = useParams();
   const card = accomodations.find((card) => card.id === id);
+  
+  if (!card.id) {
+    <Link to="*" />
+  } 
+
   return (
     <main>
       <Slideshow images={card.pictures} />
